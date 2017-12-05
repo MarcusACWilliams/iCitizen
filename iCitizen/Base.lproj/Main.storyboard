@@ -68,10 +68,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cEv-sg-BM0">
+                                <rect key="frame" x="55" y="234" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.5309063196182251" green="0.79729503393173218" blue="0.97651892900466919" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="YiY-FJ-p2h"/>
                     </view>
+                    <connections>
+                        <outlet property="gif" destination="cEv-sg-BM0" id="WX8-9Y-a0h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G8W-y6-5R1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

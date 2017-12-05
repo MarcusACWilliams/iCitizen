@@ -10,6 +10,14 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    @IBOutlet weak var gif: UIImageView!
+    
+    let thegif = UIImage.animatedImageNamed("mygif", 3)
+    
+    func loadgif(){
+                    gif.image = thegif
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
