@@ -16,6 +16,7 @@
 		B54B0E131FD61F650056E2F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B54B0E111FD61F650056E2F9 /* LaunchScreen.storyboard */; };
 		B54B0E1E1FD61F650056E2F9 /* iCitizenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54B0E1D1FD61F650056E2F9 /* iCitizenTests.swift */; };
 		B54B0E291FD61F650056E2F9 /* iCitizenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54B0E281FD61F650056E2F9 /* iCitizenUITests.swift */; };
+		B5F1502A1FD6AEA3002A330D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F150291FD6AEA3002A330D /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		B54B0E241FD61F650056E2F9 /* iCitizenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iCitizenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B54B0E281FD61F650056E2F9 /* iCitizenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCitizenUITests.swift; sourceTree = "<group>"; };
 		B54B0E2A1FD61F650056E2F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5F150291FD6AEA3002A330D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				B54B0E061FD61F650056E2F9 /* RootViewController.swift */,
 				B54B0E081FD61F650056E2F9 /* DataViewController.swift */,
 				B54B0E0A1FD61F650056E2F9 /* ModelController.swift */,
+				B5F150291FD6AEA3002A330D /* SecondViewController.swift */,
 				B54B0E0C1FD61F650056E2F9 /* Main.storyboard */,
 				B54B0E0F1FD61F650056E2F9 /* Assets.xcassets */,
 				B54B0E111FD61F650056E2F9 /* LaunchScreen.storyboard */,
@@ -268,6 +271,7 @@
 				B54B0E071FD61F650056E2F9 /* RootViewController.swift in Sources */,
 				B54B0E0B1FD61F650056E2F9 /* ModelController.swift in Sources */,
 				B54B0E091FD61F650056E2F9 /* DataViewController.swift in Sources */,
+				B5F1502A1FD6AEA3002A330D /* SecondViewController.swift in Sources */,
 				B54B0E051FD61F650056E2F9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
