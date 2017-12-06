@@ -7,16 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B522F1931FD8027A00509F1C /* bgpng.png in Resources */ = {isa = PBXBuildFile; fileRef = B522F1921FD8027A00509F1C /* bgpng.png */; };
 		B522F1951FD8096600509F1C /* right-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = B522F1941FD8096600509F1C /* right-arrow.png */; };
-		B522F1991FD80B2800509F1C /* 114837-magic-marker-icon-arrows-arrow11-right.png in Resources */ = {isa = PBXBuildFile; fileRef = B522F1961FD80B2800509F1C /* 114837-magic-marker-icon-arrows-arrow11-right.png */; };
 		B522F19A1FD80B2800509F1C /* white-right-arrow-symbols-icons-2221.png in Resources */ = {isa = PBXBuildFile; fileRef = B522F1971FD80B2800509F1C /* white-right-arrow-symbols-icons-2221.png */; };
 		B522F19B1FD80B2800509F1C /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = B522F1981FD80B2800509F1C /* Contents.json */; };
-		B522F19D1FD8112B00509F1C /* american-flag-background-Download-Royalty-free-Vector-File-EPS-221227.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B522F19C1FD8112B00509F1C /* american-flag-background-Download-Royalty-free-Vector-File-EPS-221227.jpg */; };
-		B522F19F1FD8121500509F1C /* 75051088.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B522F19E1FD8121400509F1C /* 75051088.jpg */; };
-		B522F1A11FD813FA00509F1C /* imagesfgfg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B522F1A01FD813F900509F1C /* imagesfgfg.jpeg */; };
 		B522F1A31FD8161700509F1C /* STAM-MA1_V1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B522F1A21FD8161600509F1C /* STAM-MA1_V1.jpg */; };
-		B52DDAD51FD7CC9200843482 /* bg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B52DDAD41FD7CC9200843482 /* bg.jpeg */; };
 		B54B0E051FD61F650056E2F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54B0E041FD61F650056E2F9 /* AppDelegate.swift */; };
 		B54B0E071FD61F650056E2F9 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54B0E061FD61F650056E2F9 /* RootViewController.swift */; };
 		B54B0E091FD61F650056E2F9 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54B0E081FD61F650056E2F9 /* DataViewController.swift */; };
@@ -46,17 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B522F1921FD8027A00509F1C /* bgpng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bgpng.png; path = ../../Assets.xcassets/bgpng.png; sourceTree = "<group>"; };
 		B522F1941FD8096600509F1C /* right-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "right-arrow.png"; path = "../../Assets.xcassets/right-arrow.png"; sourceTree = "<group>"; };
-		B522F1961FD80B2800509F1C /* 114837-magic-marker-icon-arrows-arrow11-right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "114837-magic-marker-icon-arrows-arrow11-right.png"; path = "../../Assets.xcassets/114837-magic-marker-icon-arrows-arrow11-right.png"; sourceTree = "<group>"; };
 		B522F1971FD80B2800509F1C /* white-right-arrow-symbols-icons-2221.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "white-right-arrow-symbols-icons-2221.png"; path = "../../Assets.xcassets/white-right-arrow-symbols-icons-2221.png"; sourceTree = "<group>"; };
 		B522F1981FD80B2800509F1C /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Contents.json; path = ../../Assets.xcassets/Contents.json; sourceTree = "<group>"; };
-		B522F19C1FD8112B00509F1C /* american-flag-background-Download-Royalty-free-Vector-File-EPS-221227.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "american-flag-background-Download-Royalty-free-Vector-File-EPS-221227.jpg"; path = "../../Assets.xcassets/american-flag-background-Download-Royalty-free-Vector-File-EPS-221227.jpg"; sourceTree = "<group>"; };
-		B522F19E1FD8121400509F1C /* 75051088.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 75051088.jpg; path = ../../Assets.xcassets/75051088.jpg; sourceTree = "<group>"; };
-		B522F1A01FD813F900509F1C /* imagesfgfg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = imagesfgfg.jpeg; path = ../../Assets.xcassets/imagesfgfg.jpeg; sourceTree = "<group>"; };
 		B522F1A21FD8161600509F1C /* STAM-MA1_V1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "STAM-MA1_V1.jpg"; path = "../../Assets.xcassets/STAM-MA1_V1.jpg"; sourceTree = "<group>"; };
 		B522F1A41FD8214800509F1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Assets.xcassets; sourceTree = "<group>"; };
-		B52DDAD41FD7CC9200843482 /* bg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bg.jpeg; path = ../../Assets.xcassets/bg.imageset/bg.jpeg; sourceTree = "<group>"; };
 		B54B0E011FD61F650056E2F9 /* iCitizen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCitizen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B54B0E041FD61F650056E2F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B54B0E061FD61F650056E2F9 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -130,15 +118,9 @@
 				B54B0E0C1FD61F650056E2F9 /* Main.storyboard */,
 				B522F1A41FD8214800509F1C /* Assets.xcassets */,
 				B522F1A21FD8161600509F1C /* STAM-MA1_V1.jpg */,
-				B522F1A01FD813F900509F1C /* imagesfgfg.jpeg */,
-				B522F19E1FD8121400509F1C /* 75051088.jpg */,
-				B522F19C1FD8112B00509F1C /* american-flag-background-Download-Royalty-free-Vector-File-EPS-221227.jpg */,
-				B522F1961FD80B2800509F1C /* 114837-magic-marker-icon-arrows-arrow11-right.png */,
 				B522F1981FD80B2800509F1C /* Contents.json */,
 				B522F1971FD80B2800509F1C /* white-right-arrow-symbols-icons-2221.png */,
 				B522F1941FD8096600509F1C /* right-arrow.png */,
-				B522F1921FD8027A00509F1C /* bgpng.png */,
-				B52DDAD41FD7CC9200843482 /* bg.jpeg */,
 				B54B0E111FD61F650056E2F9 /* LaunchScreen.storyboard */,
 				B54B0E141FD61F650056E2F9 /* Info.plist */,
 			);
@@ -271,16 +253,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B522F1951FD8096600509F1C /* right-arrow.png in Resources */,
-				B522F1991FD80B2800509F1C /* 114837-magic-marker-icon-arrows-arrow11-right.png in Resources */,
-				B522F1A11FD813FA00509F1C /* imagesfgfg.jpeg in Resources */,
 				B522F19A1FD80B2800509F1C /* white-right-arrow-symbols-icons-2221.png in Resources */,
 				B522F19B1FD80B2800509F1C /* Contents.json in Resources */,
 				B522F1A31FD8161700509F1C /* STAM-MA1_V1.jpg in Resources */,
-				B52DDAD51FD7CC9200843482 /* bg.jpeg in Resources */,
-				B522F19D1FD8112B00509F1C /* american-flag-background-Download-Royalty-free-Vector-File-EPS-221227.jpg in Resources */,
 				B54B0E131FD61F650056E2F9 /* LaunchScreen.storyboard in Resources */,
-				B522F19F1FD8121500509F1C /* 75051088.jpg in Resources */,
-				B522F1931FD8027A00509F1C /* bgpng.png in Resources */,
 				B54B0E0E1FD61F650056E2F9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
