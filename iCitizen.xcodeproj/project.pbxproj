@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B52DDAD51FD7CC9200843482 /* bg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B52DDAD41FD7CC9200843482 /* bg.jpeg */; };
 		B54B0E051FD61F650056E2F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54B0E041FD61F650056E2F9 /* AppDelegate.swift */; };
 		B54B0E071FD61F650056E2F9 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54B0E061FD61F650056E2F9 /* RootViewController.swift */; };
 		B54B0E091FD61F650056E2F9 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54B0E081FD61F650056E2F9 /* DataViewController.swift */; };
 		B54B0E0B1FD61F650056E2F9 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54B0E0A1FD61F650056E2F9 /* ModelController.swift */; };
 		B54B0E0E1FD61F650056E2F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B54B0E0C1FD61F650056E2F9 /* Main.storyboard */; };
-		B54B0E101FD61F650056E2F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B54B0E0F1FD61F650056E2F9 /* Assets.xcassets */; };
 		B54B0E131FD61F650056E2F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B54B0E111FD61F650056E2F9 /* LaunchScreen.storyboard */; };
 		B54B0E1E1FD61F650056E2F9 /* iCitizenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54B0E1D1FD61F650056E2F9 /* iCitizenTests.swift */; };
 		B54B0E291FD61F650056E2F9 /* iCitizenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54B0E281FD61F650056E2F9 /* iCitizenUITests.swift */; };
@@ -37,13 +37,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B52DDAD11FD7C86000843482 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Assets.xcassets; sourceTree = "<group>"; };
+		B52DDAD41FD7CC9200843482 /* bg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bg.jpeg; path = ../../Assets.xcassets/bg.imageset/bg.jpeg; sourceTree = "<group>"; };
 		B54B0E011FD61F650056E2F9 /* iCitizen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCitizen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B54B0E041FD61F650056E2F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B54B0E061FD61F650056E2F9 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		B54B0E081FD61F650056E2F9 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		B54B0E0A1FD61F650056E2F9 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 		B54B0E0D1FD61F650056E2F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B54B0E0F1FD61F650056E2F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B54B0E121FD61F650056E2F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B54B0E141FD61F650056E2F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B54B0E191FD61F650056E2F9 /* iCitizenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iCitizenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,7 +110,8 @@
 				B54B0E0A1FD61F650056E2F9 /* ModelController.swift */,
 				B5F150291FD6AEA3002A330D /* SecondViewController.swift */,
 				B54B0E0C1FD61F650056E2F9 /* Main.storyboard */,
-				B54B0E0F1FD61F650056E2F9 /* Assets.xcassets */,
+				B52DDAD11FD7C86000843482 /* Assets.xcassets */,
+				B52DDAD41FD7CC9200843482 /* bg.jpeg */,
 				B54B0E111FD61F650056E2F9 /* LaunchScreen.storyboard */,
 				B54B0E141FD61F650056E2F9 /* Info.plist */,
 			);
@@ -241,8 +243,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B52DDAD51FD7CC9200843482 /* bg.jpeg in Resources */,
 				B54B0E131FD61F650056E2F9 /* LaunchScreen.storyboard in Resources */,
-				B54B0E101FD61F650056E2F9 /* Assets.xcassets in Resources */,
 				B54B0E0E1FD61F650056E2F9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,12 +441,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 293L9SHJJB;
 				INFOPLIST_FILE = iCitizen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Temple.iCitizen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -453,12 +457,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 293L9SHJJB;
 				INFOPLIST_FILE = iCitizen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Temple.iCitizen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

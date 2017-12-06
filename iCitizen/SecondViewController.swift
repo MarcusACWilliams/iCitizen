@@ -10,17 +10,16 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
-    @IBOutlet weak var gif: UIImageView!
     
-    let thegif = UIImage.animatedImageNamed("mygif", 3)
-    
-    func loadgif(){
-                    gif.image = thegif
+    @IBOutlet weak var backbutton: UIButton!
+
+    override func viewDidAppear(_ animated: Bool) {
+
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
 
