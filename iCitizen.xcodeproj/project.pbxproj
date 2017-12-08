@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B504D9981FDA56DC0023171D /* yaya1.png in Resources */ = {isa = PBXBuildFile; fileRef = B504D9971FDA56DC0023171D /* yaya1.png */; };
 		B522F1951FD8096600509F1C /* right-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = B522F1941FD8096600509F1C /* right-arrow.png */; };
 		B522F19A1FD80B2800509F1C /* white-right-arrow-symbols-icons-2221.png in Resources */ = {isa = PBXBuildFile; fileRef = B522F1971FD80B2800509F1C /* white-right-arrow-symbols-icons-2221.png */; };
 		B522F19B1FD80B2800509F1C /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = B522F1981FD80B2800509F1C /* Contents.json */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B504D9971FDA56DC0023171D /* yaya1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = yaya1.png; path = ../../Assets.xcassets/yaya1.png; sourceTree = "<group>"; };
 		B522F1941FD8096600509F1C /* right-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "right-arrow.png"; path = "../../Assets.xcassets/right-arrow.png"; sourceTree = "<group>"; };
 		B522F1971FD80B2800509F1C /* white-right-arrow-symbols-icons-2221.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "white-right-arrow-symbols-icons-2221.png"; path = "../../Assets.xcassets/white-right-arrow-symbols-icons-2221.png"; sourceTree = "<group>"; };
 		B522F1981FD80B2800509F1C /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Contents.json; path = ../../Assets.xcassets/Contents.json; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				B5F150291FD6AEA3002A330D /* SecondViewController.swift */,
 				B55019ED1FD8484A002783E7 /* fourthview.swift */,
 				B54B0E0C1FD61F650056E2F9 /* Main.storyboard */,
+				B504D9971FDA56DC0023171D /* yaya1.png */,
 				B55019E61FD83C78002783E7 /* house.png */,
 				B55019E51FD83C78002783E7 /* walking.png */,
 				B55019E31FD83B70002783E7 /* pulled.png */,
@@ -268,6 +271,7 @@
 				B55019E71FD83C79002783E7 /* walking.png in Resources */,
 				B55019E81FD83C79002783E7 /* house.png in Resources */,
 				B522F19A1FD80B2800509F1C /* white-right-arrow-symbols-icons-2221.png in Resources */,
+				B504D9981FDA56DC0023171D /* yaya1.png in Resources */,
 				B522F19B1FD80B2800509F1C /* Contents.json in Resources */,
 				B55019E41FD83B70002783E7 /* pulled.png in Resources */,
 				B522F1A31FD8161700509F1C /* STAM-MA1_V1.jpg in Resources */,

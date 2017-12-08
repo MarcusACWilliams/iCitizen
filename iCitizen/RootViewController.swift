@@ -18,7 +18,7 @@ class RootViewController: UIViewController, UIPageViewControllerDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         // Configure the page view controller and add it as a child view controller.
-    
+        background.image = UIImage(named: "yaya.png")
     }
 
     override func didReceiveMemoryWarning() {
