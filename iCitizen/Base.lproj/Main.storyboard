@@ -85,16 +85,6 @@
                                     </attributedString>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vbI-Gn-oP4">
-                                <rect key="frame" x="42" y="363" width="113" height="94"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" backgroundImage="pulled.png"/>
-                                <connections>
-                                    <segue destination="kzH-E6-f7O" kind="show" id="AHP-V9-8tO"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMx-Do-NRY">
                                 <rect key="frame" x="-31" y="64" width="832" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -145,6 +135,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KQT-8C-n1Q">
                                 <rect key="frame" x="42" y="567" width="113" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95434457890245217" green="1" blue="0.96834264164616135" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="1" green="0.99200925486264635" blue="0.97408538658654342" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button" image="house.png"/>
                                 <connections>
@@ -155,7 +146,7 @@
                                 <rect key="frame" x="42" y="465" width="113" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Button" image="walking.png"/>
+                                <state key="normal" title="Button" image="walk.png"/>
                                 <connections>
                                     <segue destination="Tvn-Ju-QDx" kind="show" id="7zT-K6-Dmj"/>
                                 </connections>
@@ -175,6 +166,21 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbI-Gn-oP4" customClass="MyButton">
+                                <rect key="frame" x="42" y="367" width="113" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.9814320215902046" green="1" blue="0.99785770135417595" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="car.png"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.coner.Radius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="kzH-E6-f7O" kind="show" id="AHP-V9-8tO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.98178459870000001" green="0.99190036150000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.98305019049999998" green="1" blue="0.98758989060000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -182,6 +188,7 @@
                     </view>
                     <connections>
                         <outlet property="background" destination="MrW-v5-AvR" id="Plk-y7-jzx"/>
+                        <outlet property="drive" destination="vbI-Gn-oP4" id="lfg-wD-gGP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q3h-pU-vEd" sceneMemberID="firstResponder"/>
@@ -374,12 +381,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="car.png" width="512" height="512"/>
         <image name="house.png" width="2400" height="2400"/>
-        <image name="pulled.png" width="225" height="225"/>
-        <image name="walking.png" width="200" height="200"/>
+        <image name="walk.png" width="614" height="768"/>
         <image name="yaya1.png" width="2048" height="2732"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ufE-5F-i2m"/>
+        <segue reference="ioM-kE-s0d"/>
     </inferredMetricsTieBreakers>
 </document>
