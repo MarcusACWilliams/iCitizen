@@ -17,8 +17,8 @@ class fourthview: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        trafficstop.textColor = UIColor.white
-        trafficstop.text = "1) Grab your Documentation\n This includes:\n\t\tYour Drivers Liscense\n\t\tYour Auto insurance card\n\t\tYour vehicle registration\n 2) Roll down our drivers side window\n 3) Follow the officers instructions and keep your hands visible at all times"
+//        trafficstop.textColor = UIColor.white
+//        trafficstop.text = "1) Grab your Documentation\n This includes:\n\t\tYour Drivers Liscense\n\t\tYour Auto insurance card\n\t\tYour vehicle registration\n 2) Roll down our drivers side window\n 3) Follow the officers instructions and keep your hands visible at all times"
         // Do any additional setup after loading the view.
     }
     
