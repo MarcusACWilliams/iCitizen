@@ -363,9 +363,27 @@
                                 <state key="normal" title="No">
                                     <color key="titleColor" red="0.9966916634477283" green="0.99026017949194189" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="no:" destination="kzH-E6-f7O" eventType="touchUpInside" id="yiE-m4-OcX"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTC-Q2-g11">
-                                <rect key="frame" x="89" y="132" width="590" height="58.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XwX-RV-bOr" userLabel="Tips Label">
+                                <rect key="frame" x="398" y="85" width="350" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="A86-Uf-qX0"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTC-Q2-g11" userLabel="Step Label">
+                                <rect key="frame" x="89" y="240" width="590" height="58.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="590" id="QmT-DE-dHZ"/>
                                 </constraints>
@@ -387,18 +405,31 @@
                                 </attributedString>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ASp-S1-QUo">
+                                <rect key="frame" x="99" y="962" width="78" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.99266252850000003" green="0.98955309810000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Back:" destination="kzH-E6-f7O" eventType="touchUpInside" id="cvs-Df-ek3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="lTC-Q2-g11" firstAttribute="top" secondItem="NiT-ZR-h8W" secondAttribute="top" constant="112" id="XcV-h5-Vko"/>
+                            <constraint firstItem="XwX-RV-bOr" firstAttribute="top" secondItem="NiT-ZR-h8W" secondAttribute="top" constant="65" id="AYN-Oh-fc2"/>
+                            <constraint firstItem="lTC-Q2-g11" firstAttribute="top" secondItem="NiT-ZR-h8W" secondAttribute="top" constant="220" id="UEF-wr-0Ne"/>
+                            <constraint firstItem="NiT-ZR-h8W" firstAttribute="trailing" secondItem="XwX-RV-bOr" secondAttribute="trailing" constant="20" id="WhJ-On-QUC"/>
                             <constraint firstItem="NiT-ZR-h8W" firstAttribute="trailing" secondItem="lTC-Q2-g11" secondAttribute="trailing" constant="89" id="ZAh-bI-VOz"/>
                             <constraint firstItem="lTC-Q2-g11" firstAttribute="leading" secondItem="NiT-ZR-h8W" secondAttribute="leading" constant="89" id="wPA-sa-RcB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NiT-ZR-h8W"/>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="ASp-S1-QUo" id="ghP-p9-az4"/>
                         <outlet property="stepLable" destination="lTC-Q2-g11" id="pu4-Bi-wXa"/>
-                        <outlet property="text" destination="lTC-Q2-g11" id="ObO-RD-QQz"/>
+                        <outlet property="tipText" destination="XwX-RV-bOr" id="yw2-P5-wul"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G8W-y6-5R1" userLabel="First Responder" sceneMemberID="firstResponder"/>
