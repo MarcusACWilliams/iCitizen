@@ -323,7 +323,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yaya1.png" translatesAutoresizingMaskIntoConstraints="NO" id="ME4-l6-AOH">
-                                <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                                <rect key="frame" x="0.0" y="20" width="768" height="1027"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -335,9 +335,14 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hub-Pm-rmT">
-                                <rect key="frame" x="20" y="962" width="78" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hub-Pm-rmT">
+                                <rect key="frame" x="20" y="959" width="100" height="50"/>
+                                <color key="backgroundColor" red="0.29227422150839805" green="0.28471996213769823" blue="0.30132772020725385" alpha="0.62890625" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="HWH-W7-0BN"/>
+                                    <constraint firstAttribute="width" constant="100" id="llf-nQ-irW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Home">
                                     <color key="titleColor" red="0.99266252850388137" green="0.9895530980540489" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -365,6 +370,9 @@
                                 <state key="normal" title="No">
                                     <color key="titleColor" red="0.9966916634477283" green="0.99026017949194189" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="no:" destination="kzH-E6-f7O" eventType="touchUpInside" id="aWi-aF-ldY"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XwX-RV-bOr" userLabel="Tips Label">
                                 <rect key="frame" x="398" y="85" width="350" height="20.5"/>
@@ -404,9 +412,20 @@
                                 </attributedString>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ASp-S1-QUo">
-                                <rect key="frame" x="99" y="962" width="78" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szc-36-Wam" userLabel="Question Label">
+                                <rect key="frame" x="98" y="677" width="572" height="96"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ASp-S1-QUo">
+                                <rect key="frame" x="150" y="960" width="100" height="50"/>
+                                <color key="backgroundColor" red="0.21181643009185791" green="0.20769378542900085" blue="0.21592715382575989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="IBC-U8-WSL"/>
+                                    <constraint firstAttribute="height" constant="50" id="nfe-Vg-LmX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Back">
                                     <color key="titleColor" red="0.99266252850000003" green="0.98955309810000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -414,20 +433,18 @@
                                     <action selector="Back:" destination="kzH-E6-f7O" eventType="touchUpInside" id="cvs-Df-ek3"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szc-36-Wam" userLabel="Question Label">
-                                <rect key="frame" x="98" y="677" width="572" height="96"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="NiT-ZR-h8W" firstAttribute="bottom" secondItem="hub-Pm-rmT" secondAttribute="bottom" constant="15" id="5mi-6L-J4X"/>
                             <constraint firstItem="XwX-RV-bOr" firstAttribute="top" secondItem="NiT-ZR-h8W" secondAttribute="top" constant="65" id="AYN-Oh-fc2"/>
                             <constraint firstItem="lTC-Q2-g11" firstAttribute="top" secondItem="NiT-ZR-h8W" secondAttribute="top" constant="220" id="UEF-wr-0Ne"/>
                             <constraint firstItem="NiT-ZR-h8W" firstAttribute="trailing" secondItem="XwX-RV-bOr" secondAttribute="trailing" constant="20" id="WhJ-On-QUC"/>
                             <constraint firstItem="NiT-ZR-h8W" firstAttribute="trailing" secondItem="lTC-Q2-g11" secondAttribute="trailing" constant="89" id="ZAh-bI-VOz"/>
+                            <constraint firstItem="hub-Pm-rmT" firstAttribute="leading" secondItem="NiT-ZR-h8W" secondAttribute="leading" constant="20" id="bPI-V3-1C2"/>
+                            <constraint firstItem="ASp-S1-QUo" firstAttribute="leading" secondItem="hub-Pm-rmT" secondAttribute="trailing" constant="30" id="cW8-Qw-tbG"/>
                             <constraint firstItem="szc-36-Wam" firstAttribute="leading" secondItem="NiT-ZR-h8W" secondAttribute="leading" constant="98" id="eae-Ai-tbr"/>
+                            <constraint firstItem="NiT-ZR-h8W" firstAttribute="bottom" secondItem="ASp-S1-QUo" secondAttribute="bottom" constant="14" id="loE-18-3uV"/>
                             <constraint firstItem="NiT-ZR-h8W" firstAttribute="trailing" secondItem="szc-36-Wam" secondAttribute="trailing" constant="98" id="mkL-GI-M9i"/>
                             <constraint firstItem="lTC-Q2-g11" firstAttribute="leading" secondItem="NiT-ZR-h8W" secondAttribute="leading" constant="89" id="wPA-sa-RcB"/>
                             <constraint firstItem="szc-36-Wam" firstAttribute="top" secondItem="NiT-ZR-h8W" secondAttribute="top" constant="657" id="zho-6i-C9M"/>
@@ -436,6 +453,7 @@
                     </view>
                     <connections>
                         <outlet property="backButton" destination="ASp-S1-QUo" id="ghP-p9-az4"/>
+                        <outlet property="homeButton" destination="hub-Pm-rmT" id="iZO-Qq-NwR"/>
                         <outlet property="noButton" destination="oIr-vw-qXq" id="NTg-AP-3jU"/>
                         <outlet property="questionLabel" destination="szc-36-Wam" id="QTf-TJ-s4c"/>
                         <outlet property="stepLable" destination="lTC-Q2-g11" id="pu4-Bi-wXa"/>

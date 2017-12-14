@@ -11,14 +11,16 @@ import UIKit
 class SecondViewController: UIViewController {
     
     var steps: [NSAttributedString] = []
-    var stepsun: [String] = []
+    var nos: [String] = []
     var tips: [String] = []
     var questions: [String] = []
     var index = 0
+    var backFlag = true
     
     
     @IBOutlet weak var stepLable: UILabel!
     @IBOutlet weak var tipText: UILabel!
+    @IBOutlet weak var homeButton: UIButton!
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var yesButton: UIButton!
     @IBOutlet weak var noButton: UIButton!
@@ -34,6 +36,7 @@ class SecondViewController: UIViewController {
         tipText.text = tips[index]
         
         backButton.isEnabled = true
+        noButton.isEnabled = true
         
         if (index == steps.count-1)
         {
@@ -42,12 +45,20 @@ class SecondViewController: UIViewController {
     }
     
     @IBAction func no(_ sender: UIButton) {
+        stepLable.text = nos[index]
+        stepLable.sizeToFit()
+        noButton.isEnabled = false
+        backButton.isEnabled = true
         
+        //Tell back button to take you back to the original question instead of the previous question
+        backFlag = false
         
     }
     
     @IBAction func Back(_ sender: UIButton) {
-        index = index - 1
+        
+        //If this flag is false we need to go back to our original question and not the previous one
+        if (backFlag){index = index - 1}
         
         stepLable.attributedText = steps[index]
         stepLable.sizeToFit()
@@ -56,6 +67,8 @@ class SecondViewController: UIViewController {
         tipText.text = tips[index]
         
         yesButton.isEnabled = true
+        noButton.isEnabled = true
+        backFlag = true
         if (index < 1){backButton.isEnabled = false }
     }
     
@@ -63,34 +76,29 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.buttonFormatting()
+        backButton.isEnabled = false
         stepLable.numberOfLines = 0
         tipText.numberOfLines = 0
         questionLabel.numberOfLines = 0
         questionLabel.textAlignment = NSTextAlignment.center
         
-        //var tempString: [NSMutableAttributedString] = []
+        /*The four arrays I am using are tips- these are displayed in the top right coner of the page and give random useful information to the user.
+         steps- contains the text in the middle of the page. This is where the most relavent information is displayed. Questions- These are displayed at the bottom-center positon right above the yes/no buttons. These help us get responses from the user and move the guide forward. Nos- contains an array or repsonses that apply to NO answers in the guide.*/
         
-        var myMutableString = NSMutableAttributedString()
-        
-        tips = ["First tip...","You are perfectly within your rights to contiune drving untill you find a suitable spot to stop. Turn on your hazard lights and give and idication to the officer that you intended to pull over"]
-        
-        stepsun = ["First things first. DON'T PANIC! Routine traffic stops are nothing to be afraid of. Just remeber to be polite and cooperative and everything will go smoothly.\n\nFirst make sure you are parked in a safe well lit area.","Now that you're in a safe area let's get ready for he officer.\n", ]
+        tips = ["You are perfectly within your rights to contiune drving untill you find a suitable spot to stop. Turn on your hazard lights and give and idication to the officer that you intended to pull over","You are perfectly within your rights to contiune drving untill you find a suitable spot to stop. Turn on your hazard lights and give and idication to the officer that you intended to pull over", ""]
 
+        questions = ["Are you in a safe Area?", "Do You have all these documents?", ""]
         
-        questions = ["Are you in a safe Area?", "Do You have all these documents?"]
+        nos = ["Don't Worry about finding the perfect spot to stop. Just use your best judgment and try to avoid obvious hazards", "", ""]
         
-        var i = 0
-        while (i < stepsun.count){
+        //Below is the html text template. You can format text just like an html document and the output will be almost perfect
+        /*"<!DOCTYPE html><html><body style=\"color:white\"><h1>TEXT GOES HERE</h1></body></html>".convertHtml()*/
         
-        myMutableString = NSMutableAttributedString(string: stepsun[i], attributes: [NSAttributedStringKey.font:UIFont(name: "Georgia", size: 20.0)!])
+        steps.append("<!DOCTYPE html><html><body style=\"color:white\"><h1>First things first. DON'T PANIC! Routine traffic stops are nothing to be afraid of. Just remeber to be polite and cooperative and everything will go smoothly.<br>Now make sure you are parked in a safe well lit area.</h1></body></html>".convertHtml())
         
-        steps.append(myMutableString)
-            i += 1
-        }
+        steps.append( "<!DOCTYPE html><html><body style=\"color:white\"><h2>Now that you're in a safe area let's get ready for he officer.<ul><li>Roll Down your diver side window and turn on your cabin light above your head</li><li>In most States you will need the following:<ul><li>Your Driver's License</li><li>Your Auto Insurance card. **If your insurance company issues digital cards you can bring it up on your cellphone**</li><li>Your Vehicle Regristration<h4>**You may not have a registraion card.Look for a registraion sticker on the lower left corner of your windshield**</h4></li></li></ul> </ul></h2></body></html>".convertHtml())
         
-//        steps[1].append(Helper.bulletedList(strings: ["Roll Down your diver side window and turn on your cabin light above your head" ,"In most States you will need the following:\nYour Drivers License\nYour Auto Insurance card. **If your insurance company issues digital cards you can bring it up on your cellphone**\nYour Vehicle Regristration **You may not have a registraion card.Look for a registraion sticker on the lower left corner of your windshield**"], textColor: UIColor.white, font:UIFont(name:"Georgia", size: 20.0)!, bulletColor: UIColor.white, bulletSize: 40))
-        
-        steps[1] = "<!DOCTYPE html><html><body style=\"color:white\"><h2>Now that you're in a safe area let's get ready for he officer.<ul><li>Roll Down your diver side window and turn on your cabin light above your head</li><li>In most States you will need the following:<ul><li>Your Driver's License</li><li>Your Auto Insurance card. **If your insurance company issues digital cards you can bring it up on your cellphone**</li><li>Your Vehicle Regristration\\n<h4>**You may not have a registraion card.Look for a registraion sticker on the lower left corner of your windshield**</h4>b</li></li></ul> </ul></h2></body></html>".convertHtml()
+       steps.append("<!DOCTYPE html><html><body style=\"color:white\"><h1>TEXT GOES HERE</h1></body></html>".convertHtml())
 
 
          stepLable.attributedText = steps[0]
@@ -110,6 +118,8 @@ class SecondViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    //Place Any custom button design stuff here
     func buttonFormatting()
     {
         yesButton.clipsToBounds = true
@@ -118,8 +128,11 @@ class SecondViewController: UIViewController {
         noButton.clipsToBounds = true
         noButton.layer.cornerRadius = 50
         noButton.layer.opacity = 60.0
+        homeButton.clipsToBounds = true
+        homeButton.layer.cornerRadius = 25
+        backButton.clipsToBounds = true
+        backButton.layer.cornerRadius = 25
 
-        
     }
 }
 
