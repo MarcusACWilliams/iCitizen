@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B53319A51FE2338B0089BCA9 /* helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53319A41FE2338B0089BCA9 /* helper.swift */; };
 		B54B0E051FD61F650056E2F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54B0E041FD61F650056E2F9 /* AppDelegate.swift */; };
 		B54B0E071FD61F650056E2F9 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54B0E061FD61F650056E2F9 /* RootViewController.swift */; };
 		B54B0E0E1FD61F650056E2F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B54B0E0C1FD61F650056E2F9 /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B53319A41FE2338B0089BCA9 /* helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helper.swift; sourceTree = "<group>"; };
 		B54B0E011FD61F650056E2F9 /* iCitizen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCitizen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B54B0E041FD61F650056E2F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B54B0E061FD61F650056E2F9 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				B584A5151FDB167E009023C4 /* Assets.xcassets */,
 				B5AF9CDD1FDDCA6800AFFACB /* AppIcon */,
 				B584A5171FDB16F3009023C4 /* yaya1.png */,
+				B53319A41FE2338B0089BCA9 /* helper.swift */,
 			);
 			path = iCitizen;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				B55019EC1FD84398002783E7 /* thirdview.swift in Sources */,
 				B54B0E071FD61F650056E2F9 /* RootViewController.swift in Sources */,
 				B5F1502A1FD6AEA3002A330D /* SecondViewController.swift in Sources */,
+				B53319A51FE2338B0089BCA9 /* helper.swift in Sources */,
 				B5B407F21FDAEAA7001BB083 /* fourthview.swift in Sources */,
 				B54B0E051FD61F650056E2F9 /* AppDelegate.swift in Sources */,
 			);
