@@ -10,7 +10,7 @@ import UIKit
 
 class SecondViewController: UIViewController {
     
-    var steps: [NSMutableAttributedString] = []
+    var steps: [NSAttributedString] = []
     var stepsun: [String] = []
     var tips: [String] = []
     var questions: [String] = []
@@ -84,27 +84,25 @@ class SecondViewController: UIViewController {
         
         myMutableString = NSMutableAttributedString(string: stepsun[i], attributes: [NSAttributedStringKey.font:UIFont(name: "Georgia", size: 20.0)!])
         
-//            if (i == 1)
-//            {
-//                myMutableString.addAttribute(NSParagraphStyle, defaultTab: 15, range: NSRange(location:63,length:81))
-//            }
-            
         steps.append(myMutableString)
             i += 1
         }
         
-        steps[1].append(Helper.bulletedList(strings: ["Roll Down your diver side window and turn on your cabin light above your head" ,"In most States you will need the following:\nYour Drivers License\nYour Auto Insurance card. **If your insurance company issues digital cards you can bring it up on your cellphone**\nYour Vehicle Regristration **You may not have a registraion card.Look for a registraion sticker on the lower left corner of your windshield**"], textColor: UIColor.white, font:UIFont(name:"Georgia", size: 20.0)!, bulletColor: UIColor.white, bulletSize: 40))
+//        steps[1].append(Helper.bulletedList(strings: ["Roll Down your diver side window and turn on your cabin light above your head" ,"In most States you will need the following:\nYour Drivers License\nYour Auto Insurance card. **If your insurance company issues digital cards you can bring it up on your cellphone**\nYour Vehicle Regristration **You may not have a registraion card.Look for a registraion sticker on the lower left corner of your windshield**"], textColor: UIColor.white, font:UIFont(name:"Georgia", size: 20.0)!, bulletColor: UIColor.white, bulletSize: 40))
         
+        steps[1] = "<!DOCTYPE html><html><body style=\"color:white\"><h2>Now that you're in a safe area let's get ready for he officer.<ul><li>Roll Down your diver side window and turn on your cabin light above your head</li><li>In most States you will need the following:<ul><li>Your Driver's License</li><li>Your Auto Insurance card. **If your insurance company issues digital cards you can bring it up on your cellphone**</li><li>Your Vehicle Regristration\\n<h4>**You may not have a registraion card.Look for a registraion sticker on the lower left corner of your windshield**</h4>b</li></li></ul> </ul></h2></body></html>".convertHtml()
 
-        
 
          stepLable.attributedText = steps[0]
+        stepLable.font = UIFont(name:"Georgia", size: 20.0)
          stepLable.sizeToFit()
          questionLabel.text = questions[index]
          questionLabel.sizeToFit()
          tipText.text = tips[0]
-         tipText.textColor = UIColor.black
+         tipText.textColor = UIColor.white
          backButton.isEnabled = false
+        
+//        stepLable.attributedText = "<!DOCTYPE html><html><body><h1>This is heading 1</h1><h2>This is heading 2</h2><h3>This is heading 3</h3><h4>This is heading 4</h4><h5>This is heading 5</h5><h6>This is heading 6</h6></body></html>".convertHtml()
     }
     
     override func didReceiveMemoryWarning() {
