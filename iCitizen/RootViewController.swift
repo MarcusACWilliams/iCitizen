@@ -15,6 +15,7 @@ class RootViewController: UIViewController, UIPageViewControllerDelegate, CLLoca
     var pageViewController: UIPageViewController?
     let locationManager = CLLocationManager()
     
+    
     @IBOutlet weak var background: UIImageView!
     @IBOutlet weak var drive: UIButton!
     @IBOutlet weak var walk: UIButton!
@@ -37,7 +38,10 @@ class RootViewController: UIViewController, UIPageViewControllerDelegate, CLLoca
         {
             if let place = placemark?[0]
             {
-                self.locationLabel.text = place.locality
+                var locationLabelString = place.locality
+                locationLabelString?.append(contentsOf: ", ")
+                locationLabelString?.append(place.administrativeArea!)
+                self.locationLabel.text = locationLabelString
             }
         }
         }
