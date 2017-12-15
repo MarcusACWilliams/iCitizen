@@ -21,12 +21,29 @@ class RootViewController: UIViewController, UIPageViewControllerDelegate, CLLoca
     @IBOutlet weak var house: UIButton!
     @IBOutlet weak var locationLabel: UILabel!
     
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
+    {
+        let location = locations[0]
+        
         var locValue:CLLocationCoordinate2D = manager.location!.coordinate
-        locationLabel.text = String(locValue.latitude) + " " + String(locValue.longitude)
+        //locationLabel.text = String(locValue.latitude) + " " + String(locValue.longitude)
         print("locations = \(locValue.latitude) \(locValue.longitude)")
+        
+        CLGeocoder().reverseGeocodeLocation(location) { (placemark, error) in
+        if error != nil
+        {
+            print("There was an error")
+        }else
+        {
+            if let place = placemark?[0]
+            {
+                self.locationLabel.text = place.locality
+            }
+        }
+        }
     }
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -49,6 +66,7 @@ class RootViewController: UIViewController, UIPageViewControllerDelegate, CLLoca
             locationManager.delegate = self
             locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
             locationManager.startUpdatingLocation()
+
         }
     }
 

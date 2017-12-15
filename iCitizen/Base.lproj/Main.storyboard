@@ -156,7 +156,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.47089568661971831" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Philadelphia, PA, 19122">
+                                    <fragment content="No location">
                                         <attributes>
                                             <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="28" name=".AppleSystemUIFont"/>
