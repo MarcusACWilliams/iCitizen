@@ -15,7 +15,7 @@
 		B54B0E131FD61F650056E2F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B54B0E111FD61F650056E2F9 /* LaunchScreen.storyboard */; };
 		B54B0E1E1FD61F650056E2F9 /* iCitizenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54B0E1D1FD61F650056E2F9 /* iCitizenTests.swift */; };
 		B54B0E291FD61F650056E2F9 /* iCitizenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54B0E281FD61F650056E2F9 /* iCitizenUITests.swift */; };
-		B55019EC1FD84398002783E7 /* thirdview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55019EB1FD84398002783E7 /* thirdview.swift */; };
+		B55019EC1FD84398002783E7 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55019EB1FD84398002783E7 /* ThirdViewController.swift */; };
 		B57161371FE2628D00F18412 /* HTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57161361FE2628D00F18412 /* HTML.swift */; };
 		B571613A1FE28CF700F18412 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B57161391FE28CF700F18412 /* CoreLocation.framework */; };
 		B584A5161FDB167E009023C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B584A5151FDB167E009023C4 /* Assets.xcassets */; };
@@ -60,7 +60,7 @@
 		B54B0E241FD61F650056E2F9 /* iCitizenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iCitizenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B54B0E281FD61F650056E2F9 /* iCitizenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCitizenUITests.swift; sourceTree = "<group>"; };
 		B54B0E2A1FD61F650056E2F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B55019EB1FD84398002783E7 /* thirdview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirdview.swift; sourceTree = "<group>"; };
+		B55019EB1FD84398002783E7 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		B57161361FE2628D00F18412 /* HTML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTML.swift; sourceTree = "<group>"; };
 		B57161391FE28CF700F18412 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		B584A5151FDB167E009023C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -124,9 +124,9 @@
 			isa = PBXGroup;
 			children = (
 				B54B0E041FD61F650056E2F9 /* AppDelegate.swift */,
-				B55019EB1FD84398002783E7 /* thirdview.swift */,
 				B54B0E061FD61F650056E2F9 /* RootViewController.swift */,
 				B5F150291FD6AEA3002A330D /* SecondViewController.swift */,
+				B55019EB1FD84398002783E7 /* ThirdViewController.swift */,
 				B5B407F11FDAEAA7001BB083 /* fourthview.swift */,
 				B54B0E0C1FD61F650056E2F9 /* Main.storyboard */,
 				B584A51C1FDB19E7009023C4 /* car.png */,
@@ -310,7 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B57161371FE2628D00F18412 /* HTML.swift in Sources */,
-				B55019EC1FD84398002783E7 /* thirdview.swift in Sources */,
+				B55019EC1FD84398002783E7 /* ThirdViewController.swift in Sources */,
 				B54B0E071FD61F650056E2F9 /* RootViewController.swift in Sources */,
 				B5F1502A1FD6AEA3002A330D /* SecondViewController.swift in Sources */,
 				B53319A51FE2338B0089BCA9 /* helper.swift in Sources */,
